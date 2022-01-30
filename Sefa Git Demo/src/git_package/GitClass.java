@@ -10,6 +10,6 @@ package git_package;
  */
 public class GitClass {
     public static void main(String[] args) {
-        System.out.println("Hello Git");
+        System.out.println("Hello Git and I hope you are good....");
     }
 }
