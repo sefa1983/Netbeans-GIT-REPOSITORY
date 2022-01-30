@@ -9,7 +9,16 @@ package git_package;
  * @author Orenda
  */
 public class GitClass {
+
+    static {
+        Runnable r = () -> {
+            System.out.println("Another thread....");
+        };
+        Thread t = new Thread(r);
+        t.start();
+    }
+
     public static void main(String[] args) {
-        System.out.println("Hello Git and I hope you are good....");
+        System.out.println("Hello Git and I hope you are good.....");
     }
 }
