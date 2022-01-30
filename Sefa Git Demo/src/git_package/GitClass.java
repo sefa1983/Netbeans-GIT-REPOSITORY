@@ -12,7 +12,7 @@ public class GitClass {
 
     static {
         Runnable r = () -> {
-            System.out.println("Another thread....");
+            System.out.println("Init thread....");
         };
         Thread t = new Thread(r);
         t.start();
