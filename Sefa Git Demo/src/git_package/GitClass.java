@@ -18,7 +18,13 @@ public class GitClass {
         t.start();
     }
 
+    public void greet(String name) {
+        System.out.println("Hi there.... Mr. " + name);
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello Git and I hope you are good.....");
+        Computer computer = new GitClass()::greet;
+        computer.sayHello("Raymond");
     }
 }
